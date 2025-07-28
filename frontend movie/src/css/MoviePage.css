@@ -1,31 +1,109 @@
 .movie-page {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-  
-  .movie-banner {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .movie-details h1 {
-    font-size: 2rem;
-  }
-  
-  .favorite-toggle {
-    background-color: crimson;
-    border: none;
-    color: white;
-    padding: 10px 16px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .favorite-toggle.active {
-    background-color: #222;
-  }
-  
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: #fff;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.movie-banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.movie-details h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-details p {
+  margin: 0.3rem 0;
+}
+
+.favorite-toggle {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-toggle.active {
+  background-color: #333;
+}
+
+.trailer-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #00f2ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.trailer-link:hover {
+  text-decoration: underline;
+}
+
+/* Cast Section */
+.cast-section {
+  margin-top: 2rem;
+}
+
+.cast-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cast-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.cast-list li {
+  width: 100px;
+  text-align: center;
+}
+
+.cast-list img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cast-list .character {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* OTT Section */
+.ott-platforms {
+  margin-top: 1.5rem;
+}
+
+.ott-platforms ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.ott-platforms img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  padding: 4px;
+}
