@@ -1,0 +1,31 @@
+.movie-page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .movie-banner {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-details h1 {
+    font-size: 2rem;
+  }
+  
+  .favorite-toggle {
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .favorite-toggle.active {
+    background-color: #222;
+  }
+  

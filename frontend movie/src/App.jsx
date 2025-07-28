@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import { MovieProvider } from "./contexts/MovieContext";
 import NavBar from "./components/NavBar";
+import MoviePage from "./pages/MoviePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route path="/movie/:id" element={<MoviePage />} />
         </Routes>
       </main>
     </MovieProvider>
